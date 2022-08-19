@@ -6,8 +6,17 @@ sudo pacman -S stow
 ```
 git clone https://gitlab.com/anz1x/dotfiles-sway && cd dotfiles-sway
 ```
+Ниже приведена эмитация действий stow
 ```
 stow -nvt ~ */
+```
+Если же вы уверены в своих действиях то вводим данную команду без опции n
+```
+stow -vt ~ */
+```
+Также можно вытянуть отдельную папку, к примеру alacritty
+```
+stow -nvt ~ sway
 ```
 
 * (n) - это означает что действия будут эмитироватся
