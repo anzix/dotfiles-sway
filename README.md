@@ -3,20 +3,16 @@
 ```
 sudo pacman -S stow
 ```
+```bash
+git clone https://gitlab.com/anz1x/dotfiles-sway && cd dotfiles-sway/base
 ```
-git clone https://gitlab.com/anz1x/dotfiles-sway && cd dotfiles-sway
-```
-Ниже приведена эмитация действий stow
-```
-stow -nvt ~ */
-```
-Если же вы уверены в своих действиях то вводим данную команду без опции n
-```
+```bash
+# Вытащить всё
 stow -vt ~ */
 ```
-Также можно вытянуть отдельную папку, к примеру alacritty
-```
-stow -nvt ~ sway
+```bash
+# Вытянуть отдельную папку
+stow -vt ~ sway
 ```
 
 * (n) - это означает что действия будут эмитироватся
